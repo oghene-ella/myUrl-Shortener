@@ -1,0 +1,150 @@
+/* Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Navbar Styling */
+.navbar_cont {
+    background-color: rgb(202, 193, 254);
+}
+
+.navbar {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #141414;
+}
+
+.nav-links a {
+    color: #141414;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 32px;
+}
+
+/* Navbar Menu */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu_cont .menu li:hover {
+    background-color: rgb(202, 193, 254);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu_cont .menu li {
+    padding: 5px 14px;
+}
+
+.menu_cont .menu section {
+    width: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu_cont .menu li:nth-child(1) a {
+    color: #0065FE;
+}
+
+.menu_cont .menu li:nth-child(2) a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.menu_cont .menu .buttons p {
+    color: #0065FE;
+}
+
+.menu_cont .menu .buttons button {
+    width: 10vw;
+    padding: 9px 8px;
+    border-radius: 17px;
+    color: white;
+    border: none;
+    background: #0065FE;
+}
+
+/* Navbar Responsiveness */
+
+/* Hamburger checker */
+input[type=checkbox] {
+    display: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Adding Responsiveness */
+@media (max-width: 1118px) {
+    .menu_cont .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(202, 193, 254);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu_cont .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu_cont .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu_cont .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu_cont .menu .buttons {
+        padding: 8px 0px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .menu_cont .menu .buttons button {
+        width: 30vw;
+        margin: 0 auto;
+    }
+}
