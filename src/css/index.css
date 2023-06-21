@@ -5,22 +5,54 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "CustomGilroyFont";
+    src: url("../fonts/Gilroy-Medium.eot");
+    src: url("../fonts/Gilroy-Medium.woff") format("woff"),
+        url("../fonts/Gilroy-Medium.otf") format("opentype");
+}
+
 body {
-    font-family: cursive;
+    font-family: 'CustomGilroyFont', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #141414;
 }
 
-a {
-    text-decoration: none;
+.container {
+    position: relative;
+    width: 100vw;
+    border: 2px solid rgb(7, 173, 48);
+    height: 500vh;
 }
 
-li {
-    list-style: none;
+.container .sub-container {
+    width: 100vw;
+    border: 1px solid rgb(149, 159, 7);
+    height: 450vh;
 }
 
+.container .sub-container .hero-section {
+    width: 100vw;
+    border: 1px solid rgb(170, 0, 255);
+    height: fit-content;
+    position: relative;
+}
+
+.container .sub-container .hero-background {
+    width: 80%;
+    height: 55%;
+    background-image: url('../img/other_assets/Hero_Section_Background1.svg');
+    position: absolute;
+    left: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
 
 /* Navbar Styling */
 .navbar_cont {
-    background-color: rgb(202, 193, 254);
+    background-color: transparent;
 }
 
 .navbar {
@@ -37,22 +69,26 @@ li {
     color: #141414;
 }
 
-/* Logo Styling */
-.logo {
-    font-size: 32px;
-}
 
 /* Navbar Menu */
 .menu {
     display: flex;
     gap: 1em;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.menu_cont .menu li a {
+    text-decoration: none;
+}
+
+.menu_cont .menu li {
+    list-style: none;
 }
 
 .menu_cont .menu li:hover {
-    background-color: rgb(202, 193, 254);
-    border-radius: 5px;
-    transition: 0.3s ease;
+    text-decoration: underline;
+    color: #0065FE;
+    font-weight: 600;
 }
 
 .menu_cont .menu li {
@@ -82,13 +118,20 @@ li {
     color: #0065FE;
 }
 
-.menu_cont .menu .buttons button {
-    width: 10vw;
-    padding: 9px 8px;
-    border-radius: 17px;
+.menu_cont .menu .buttons button,
+.header span span.button button {
+    width: 150px;
+    padding: 12px 24px;
+    border-radius: 100px;
     color: white;
     border: none;
     background: #0065FE;
+}
+
+.menu_cont .menu .buttons button:hover,
+.header span span.button button:hover{
+    background-color: #1b1b1be2;
+    cursor: pointer;
 }
 
 /* Navbar Responsiveness */
@@ -135,16 +178,54 @@ input[type=checkbox] {
         display: block;
     }
 
-    .menu_cont .menu .buttons {
+    .menu_cont .menu .buttons{
         padding: 8px 0px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         gap: 10px;
     }
+}
 
-    .menu_cont .menu .buttons button {
-        width: 30vw;
-        margin: 0 auto;
-    }
+.container .sub-container .hero-section .header{
+    width: 80%;
+    font-size: 48px;
+    font-family: 'CustomGilroyFont', Arial;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 90px;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.container .sub-container .hero-section .header span h1 span.line_text {
+    display:inline-block ;
+    vertical-align: middle;
+
+}
+.container .sub-container .hero-section .header span h1 span b{
+    color:#0065FE;
+}
+
+.container .sub-container .hero-section .header span p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 15px auto;
+}
+
+.container .sub-container .hero-section .header span span.button a{
+    padding-left: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #0065FE;
+}
+.container .sub-container .hero-section .header figure{
+    width: 100%;
+    height: 40%;
+}
+.container .sub-container .hero-section figure img{
+    width: 100%;
 }
