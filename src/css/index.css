@@ -121,7 +121,11 @@ body {
 .menu_cont .menu .buttons p {
     color: #0065FE;
 }
-
+.menu_cont .menu .buttons p:hover {
+    color: #05080c;
+    text-decoration: underline;
+    cursor: pointer;
+}
 .menu_cont .menu .buttons button,
 .header span span.button button {
     width: 150px;
@@ -227,6 +231,10 @@ input[type=checkbox] {
     text-decoration: none;
     font-weight: 300;
     color: #0065FE;
+}
+.container .sub-container .hero-section .header span span.button a:hover {
+    color: #141414;
+    text-decoration: underline;
 }
 .container .sub-container .hero-section .header figure{
     width: 100%;
