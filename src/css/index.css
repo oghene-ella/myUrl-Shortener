@@ -445,9 +445,8 @@ input[type=checkbox] {
 
 /* price section header */
 .container .sub-container .price_section {
-    border: 2px solid red;
     width: 100vw;
-    padding: 90px 0px;
+    padding: 90px 0px 0px;
 }
 .container .sub-container .price_section .price-sub-cont{
     width: 80vw;
@@ -501,14 +500,12 @@ input[type=checkbox] {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
 } 
 .container .sub-container .price_section .price-sub-cont .price-plans .first section,
-.container .sub-container .price_section .price-sub-cont .price-plans .second section,
 .container .sub-container .price_section .price-sub-cont .price-plans .third section{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 .container .sub-container .price_section .price-sub-cont .price-plans .first section span,
-.container .sub-container .price_section .price-sub-cont .price-plans .second section span,
 .container .sub-container .price_section .price-sub-cont .price-plans .third section span{
     display: flex;
     gap: 1rem;
@@ -521,20 +518,32 @@ input[type=checkbox] {
 
 .container .sub-container .price_section .price-sub-cont .price-plans .second {
     width: 25vw;
-    height: 90vh;
+    height: 80vh;
     border-radius: 10px;
     background: rgb(30, 52, 72);
     background: linear-gradient(180deg, rgba(30, 52, 72, 1) 0%, rgba(30, 52, 72, 0.9304096638655462) 100%);
     padding: 40px 30px 0px 40px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     color: white;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
 }
+
+.container .sub-container .price_section .price-sub-cont .price-plans .second section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container .sub-container .price_section .price-sub-cont .price-plans .second section span{
+    display: flex;
+    gap: 1rem;
+}
 .container .sub-container .price_section .price-sub-cont .price-plans .second .price-mid{
-    border: 2px solid red;
-    margin: auto;
+    margin: 9px  10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .container .sub-container .price_section .price-sub-cont .price-plans .second section span p {
     font-size: 13px;
@@ -553,4 +562,36 @@ input[type=checkbox] {
     flex-direction: column;
     gap: 2rem;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+.container .sub-container .price_section .price-button {
+    padding: 80px 0px 80px;
+    margin: auto;
+    width: 27vw;
+}
+
+.container .sub-container .price_section .price-button button {
+    padding: 10px 30px;
+    border: 1px solid #0065FE;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #0065FE;
+    margin: 0px 10px;
+}
+.container .sub-container .price_section .price-button button:last-child{
+    background-color: #0065FE;
+    color: white;
+}
+
+.container .sub-container .scissors-form{
+    width: 100vw;
+    background-image: url("../img/other_assets/form-background.png");
+    height: 60vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container .sub-container .scissors-form .main-form{
+    width: 40vw;
+    height: 55vh;
+    background-color: rgb(230, 79, 79);
+    margin: auto;
 }
