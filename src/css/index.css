@@ -17,22 +17,22 @@ body {
     font-weight: normal;
     font-style: normal;
     color: #141414;
-    width: 100vw;
+    width: 100%;
 }
 
 .container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 
 .container .sub-container {
-    width: 100vw;
+    width: 100%;
     height: 450vh;
 }
 
 .container .sub-container .hero-section {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     position: relative;
 }
@@ -154,49 +154,9 @@ input[type=checkbox] {
     user-select: none;
 }
 
-/* Adding Responsiveness */
-
-@media (max-width: 1118px) {
-    .menu_cont .menu {
-        display: none;
-        position: absolute;
-        background-color: rgb(203, 60, 60);
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 20px 0;
-        z-index: 100;
-    }
-
-    .menu_cont .menu li:hover {
-        display: inline-block;
-        background-color: #4c9e9e;
-        transition: 0.3s ease;
-    }
-
-    .menu_cont .menu li+li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked~.menu_cont .menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .menu_cont .menu .buttons{
-        padding: 8px 0px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        gap: 10px;
-    }
-}
 /* styling for the hero section */
 .container .sub-container .hero-section .header{
-    width: 80vw;
+    width: 80%;
     font-size: 48px;
     font-family: 'CustomGilroyFont', Arial;
     margin: 30px auto;
@@ -207,7 +167,7 @@ input[type=checkbox] {
     position: relative;
 }
 .container .sub-container .hero-section .header span h1 {
-    width: 50vw;
+    width: 60%;
     margin: auto;
 }
 .container .sub-container .hero-section .header span h1 span.line_text {
@@ -242,130 +202,46 @@ input[type=checkbox] {
     height: 40%;
 }
 .container .sub-container .hero-section figure img{
-    width: 98.5%;
-}
-
-/* mobile responsiveness for the hero section */
-@media only screen and (max-width: 1076px) and (min-width: 800px) {
-    .container .sub-container .hero-section .header {
-            width: 85%;
-            font-size: 42px;
-        }
-    
-        .container .sub-container .hero-section .header span p {
-            width: 90%;
-        }
-    
-        .container .sub-container .hero-section .header figure {
-            width: 100%;
-            height: 40%;
-        }
-    
-        .container .sub-container .hero-section figure img {
-            width: 90%;
-            height: 20rem;
-        }
-}
-
-@media only screen and (max-width: 799px) and (min-width: 550px) {
-    .container .sub-container .hero-section .header {
-        width: 85%;
-        font-size: 31px;
-        line-height: 45px;
-    }
-
-    .container .sub-container .hero-background {
-        width: 100%;
-        height: 75%;
-        z-index: 10;
-    }
-
-    .container .sub-container .hero-section .header span p {
-        width: 90%;
-    }
-
-    .container .sub-container .hero-section figure img {
-        min-width: inherit;
-        min-height: 18rem;
-    }
-}
-
-@media only screen and (max-width: 550px) and (min-width: 400px) {
-    .container .sub-container .hero-section .header {
-        width: 80%;
-        font-size: 28px;
-        line-height: 45px;
-    }
-
-    .container .sub-container .hero-background {
-        width: 100%;
-        height: 75%;
-        z-index: 10;
-    }
-
-    .container .sub-container .hero-section .header span p {
-        width: 95%;
-    }
-
-    .container .sub-container .hero-section figure img {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 399px) and (min-width: 200px) {
-    .container .sub-container .hero-section .header {
-        width: 100%;
-        font-size: 24px;
-        line-height: 45px;
-    }
-
-    .container .sub-container .hero-background {
-        width: 85%;
-        height: 75%;
-    }
-
-    .container .sub-container .hero-section .header span p {
-        width: 80%;
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    .container .sub-container .hero-section figure img {
-        display: none;
-    }
+    width: 100%;
 }
 
 /* styling for the four possibilities section */
 .container .sub-container .four_possibilities {
-    width: 98.3%;
+    width: 100%;
     height: fit-content;
     position: relative;
     background-color: #F9FBFD;
     padding: 50px 0px;
 }
-.container .sub-container .four_possibilities .sub-possibility-cont{
-        display: flex;
-        margin: auto;
-        width: 85vw;
-        justify-content: space-between;
+
+.container .sub-container .four_possibilities .sub-possibility-cont {
+    display: flex;
+    margin: auto;
+    width: 85vw;
+    justify-content: space-between;
 }
-.container .sub-container h1{
+
+.container .sub-container h1 {
     color: #141414;
     font-size: 33px;
     font-weight: bold;
 }
-.container .sub-container h1 span{
+
+.container .sub-container h1 span {
     color: #0065FE;
 }
-.container .sub-container .four_possibilities .possibilities{
+
+.container .sub-container .four_possibilities .possibilities {
     display: flex;
     width: 60vw;
     justify-content: space-around;
 }
-.container .sub-container .four_possibilities .possibilities h2{
+
+.container .sub-container .four_possibilities .possibilities h2 {
     font-size: 28px;
 }
-.container .sub-container .four_possibilities .possibilities p{
+
+.container .sub-container .four_possibilities .possibilities p {
     font-size: 12px;
     font-weight: 100;
     color: #141414;
@@ -377,7 +253,8 @@ input[type=checkbox] {
     height: fit-content;
     padding: 80px 0px;
 }
-.container .sub-container .choose_us .choose_sub_cont{
+
+.container .sub-container .choose_us .choose_sub_cont {
     width: 85vw;
     height: fit-content;
     margin: auto;
@@ -389,31 +266,35 @@ input[type=checkbox] {
     display: flex;
     gap: 1rem;
 }
-.container .sub-container .choose_us .choose_sub_cont .choose_us_header span.header-cont{
+
+.container .sub-container .choose_us .choose_sub_cont .choose_us_header span.header-cont {
     width: 24.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.container .sub-container .choose_us .choose_sub_cont .choose_us_header img{
+
+.container .sub-container .choose_us .choose_sub_cont .choose_us_header img {
     width: 5px;
     height: 35px;
 }
-.container .sub-container .choose_us .choose_sub_cont .choose_us_header span.header-cont h1{
+
+.container .sub-container .choose_us .choose_sub_cont .choose_us_header span.header-cont h1 {
     font-size: 33px;
     letter-spacing: 2px;
 }
 
-.container .sub-container .choose_us .choose_sub_cont .choose_us_header span.header-cont p{
+.container .sub-container .choose_us .choose_sub_cont .choose_us_header span.header-cont p {
     line-height: 1.6rem;
     letter-spacing: 0.6px;
 }
 
-.container .sub-container .choose_us .choose_sub_cont .reasons_for_choosing{
+.container .sub-container .choose_us .choose_sub_cont .reasons_for_choosing {
     width: 59%;
     display: flex;
 }
-.container .sub-container .choose_us .choose_sub_cont .reasons_for_choosing .reason_col1{
+
+.container .sub-container .choose_us .choose_sub_cont .reasons_for_choosing .reason_col1 {
     padding: 0px 15px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -426,8 +307,9 @@ input[type=checkbox] {
     flex-direction: column;
     gap: 1.2rem;
 }
+
 .container .sub-container .choose_us .choose_sub_cont .reasons_for_choosing .reason_col1 span p,
-.container .sub-container .choose_us .choose_sub_cont .reasons_for_choosing .reason_col2 span p{
+.container .sub-container .choose_us .choose_sub_cont .reasons_for_choosing .reason_col2 span p {
     width: 21rem;
     height: fit-content;
     letter-spacing: 0.7px;
@@ -442,12 +324,14 @@ input[type=checkbox] {
     gap: 3.5rem;
 }
 
+
 /* price section header */
 .container .sub-container .price_section {
     width: 100vw;
     padding: 90px 0px 0px;
 }
-.container .sub-container .price_section .price-sub-cont{
+
+.container .sub-container .price_section .price-sub-cont {
     width: 80vw;
     margin: 0px auto;
     display: flex;
@@ -455,37 +339,42 @@ input[type=checkbox] {
     gap: 4rem;
 }
 
-.container .sub-container .price_section .price-sub-cont .price-header{
+.container .sub-container .price_section .price-sub-cont .price-header {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
 }
-.container .sub-container .price_section .price-sub-cont .price-header span.header-2{
+
+.container .sub-container .price_section .price-sub-cont .price-header span.header-2 {
     width: fit-content;
     display: flex;
     margin: auto;
     gap: 1rem;
 }
-.container .sub-container .price_section .price-sub-cont .price-header span.header-2 span{
+
+.container .sub-container .price_section .price-sub-cont .price-header span.header-2 span {
     color: #0065FE;
 }
-.container .sub-container .price_section .price-sub-cont .price-header span.header-2 h2{
+
+.container .sub-container .price_section .price-sub-cont .price-header span.header-2 h2 {
     font-size: 33px;
     letter-spacing: 2px;
 }
-.container .sub-container .price_section .price-sub-cont .price-header p{
+
+.container .sub-container .price_section .price-sub-cont .price-header p {
     width: 40vw;
     margin: auto;
     line-height: 1.5rem;
 }
 
-.container .sub-container .price_section .price-sub-cont .price-plans{
+.container .sub-container .price_section .price-sub-cont .price-plans {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container .sub-container .price_section .price-sub-cont .price-plans .first{
+
+.container .sub-container .price_section .price-sub-cont .price-plans .first {
     width: 25vw;
     border: 0.5px solid #93beffc6;
     border-right: 0px;
@@ -497,20 +386,23 @@ input[type=checkbox] {
     gap: 2rem;
     border-bottom: 0px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
-} 
+}
+
 .container .sub-container .price_section .price-sub-cont .price-plans .first section,
-.container .sub-container .price_section .price-sub-cont .price-plans .third section{
+.container .sub-container .price_section .price-sub-cont .price-plans .third section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 .container .sub-container .price_section .price-sub-cont .price-plans .first section span,
-.container .sub-container .price_section .price-sub-cont .price-plans .third section span{
+.container .sub-container .price_section .price-sub-cont .price-plans .third section span {
     display: flex;
     gap: 1rem;
 }
+
 .container .sub-container .price_section .price-sub-cont .price-plans .first section span p,
-.container .sub-container .price_section .price-sub-cont .price-plans .third section span p{
+.container .sub-container .price_section .price-sub-cont .price-plans .third section span p {
     font-size: 13px;
     margin: auto 0;
 }
@@ -534,20 +426,23 @@ input[type=checkbox] {
     gap: 1.5rem;
 }
 
-.container .sub-container .price_section .price-sub-cont .price-plans .second section span{
+.container .sub-container .price_section .price-sub-cont .price-plans .second section span {
     display: flex;
     gap: 1rem;
 }
-.container .sub-container .price_section .price-sub-cont .price-plans .second .price-mid{
-    margin: 9px  10px auto;
+
+.container .sub-container .price_section .price-sub-cont .price-plans .second .price-mid {
+    margin: 9px 10px auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .container .sub-container .price_section .price-sub-cont .price-plans .second section span p {
     font-size: 13px;
     margin: auto 0;
 }
+
 .container .sub-container .price_section .price-sub-cont .price-plans .third {
     border-radius: 0px 20px 20px 0px;
     width: 25vw;
@@ -562,6 +457,7 @@ input[type=checkbox] {
     gap: 2rem;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
 }
+
 .container .sub-container .price_section .price-button {
     padding: 80px 0px 80px;
     margin: auto;
@@ -576,21 +472,83 @@ input[type=checkbox] {
     color: #0065FE;
     margin: 0px 10px;
 }
-.container .sub-container .price_section .price-button button:last-child{
+
+.container .sub-container .price_section .price-button button:last-child {
     background-color: #0065FE;
     color: white;
 }
 
-.container .sub-container .scissors-form{
-    width: 98.5%;
+/* Scissors Form */
+.container .sub-container .scissors-form {
+    width: 100%;
     background-image: url("../img/other_assets/form-background.png");
     height: 60vw;
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 }
-.container .sub-container .scissors-form .main-form{
-    width: 40vw;
-    height: 55vh;
-    background-color: rgb(230, 79, 79);
-    margin: auto;
+
+.container .sub-container .scissors-form .main-form {
+    width: 35vw;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+.container .sub-container .scissors-form .main-form .wrapper{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.container .sub-container .scissors-form .main-form .wrapper input:first-child{
+    border: 1px solid #0065FE;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.container .sub-container .scissors-form .main-form .wrapper input:first-child::placeholder,
+.container .sub-container .scissors-form .main-form .wrapper span select,
+.container .sub-container .scissors-form .main-form .wrapper span input::placeholder{
+    color: #0065FE;
+}
+
+.container .sub-container .scissors-form .main-form .wrapper span{
+    width: 100%;
+    display: inline-block;
+}
+
+.container .sub-container .scissors-form .main-form .wrapper span select,
+.container .sub-container .scissors-form .main-form .wrapper span input
+{
+    border: 1px solid #0065FE;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 48%;
+}
+.container .sub-container .scissors-form .main-form .wrapper span select {
+    margin-right: 11px;
+}
+.container .sub-container .scissors-form .main-form .wrapper button{
+    background-color: #0065FE;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sub-container .scissors-form .main-form .wrapper p{
+    font-size: 13.5px;
+    letter-spacing: 1px;
+    color: #589bff;
+    padding: 5px;
+    font-family: "CustomGilroyFont";
 }
