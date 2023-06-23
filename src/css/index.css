@@ -17,18 +17,18 @@ body {
     font-weight: normal;
     font-style: normal;
     color: #141414;
+    width: 100%;
+    border: 2px solid red;
 }
 
 .container {
     position: relative;
     width: 100vw;
-    border: 2px solid rgb(7, 173, 48);
-    height: 500vh;
+    height: fit-content;
 }
 
 .container .sub-container {
     width: 100vw;
-    border: 1px solid rgb(149, 159, 7);
     height: 450vh;
 }
 
@@ -56,7 +56,7 @@ body {
 
 .navbar {
     position: relative;
-    width: 90vw;
+    width: 88vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -243,7 +243,7 @@ input[type=checkbox] {
     height: 40%;
 }
 .container .sub-container .hero-section figure img{
-    width: 100%;
+    width: 98.5%;
 }
 
 /* mobile responsiveness for the hero section */
@@ -263,7 +263,7 @@ input[type=checkbox] {
         }
     
         .container .sub-container .hero-section figure img {
-            width: 100%;
+            width: 90%;
             height: 20rem;
         }
 }
@@ -338,7 +338,7 @@ input[type=checkbox] {
 
 /* styling for the four possibilities section */
 .container .sub-container .four_possibilities {
-    width: 100vw;
+    width: 98.3%;
     height: fit-content;
     position: relative;
     background-color: #F9FBFD;
@@ -583,7 +583,7 @@ input[type=checkbox] {
 }
 
 .container .sub-container .scissors-form{
-    width: 100vw;
+    width: 98.5%;
     background-image: url("../img/other_assets/form-background.png");
     height: 60vw;
     background-size: contain;
