@@ -34,7 +34,6 @@ body {
 
 .container .sub-container .hero-section {
     width: 100vw;
-    border: 1px solid rgb(170, 0, 255);
     height: fit-content;
     position: relative;
 }
@@ -196,8 +195,9 @@ input[type=checkbox] {
         gap: 10px;
     }
 }
+/* styling for the hero section */
 .container .sub-container .hero-section .header{
-    width: 80%;
+    width: 80vw;
     font-size: 48px;
     font-family: 'CustomGilroyFont', Arial;
     margin: 30px auto;
@@ -207,18 +207,20 @@ input[type=checkbox] {
     height: fit-content;
     position: relative;
 }
-
+.container .sub-container .hero-section .header span h1 {
+    width: 50vw;
+    margin: auto;
+}
 .container .sub-container .hero-section .header span h1 span.line_text {
-    display:inline-block ;
-    vertical-align: middle;
-
+    display: inline-block;
+    vertical-align: top;
 }
 .container .sub-container .hero-section .header span h1 span b{
     color:#0065FE;
 }
 
 .container .sub-container .hero-section .header span p{
-    width: 80%;
+    width: 52vw;
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
@@ -244,6 +246,7 @@ input[type=checkbox] {
     width: 100%;
 }
 
+/* mobile responsiveness for the hero section */
 @media only screen and (max-width: 1076px) and (min-width: 800px) {
     .container .sub-container .hero-section .header {
             width: 85%;
@@ -332,3 +335,40 @@ input[type=checkbox] {
         display: none;
     }
 }
+
+/* styling for the four possibilities section */
+.container .sub-container .four_possibilities {
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    background-color: #F9FBFD;
+    padding: 50px 0px;
+}
+.container .sub-container .four_possibilities .sub-possibility-cont{
+        display: flex;
+        margin: auto;
+        width: 85vw;
+        justify-content: space-between;
+}
+.container .sub-container h1{
+    color: #141414;
+    font-size: 33px;
+    font-weight: bold;
+}
+.container .sub-container h1 span{
+    color: #0065FE;
+}
+.container .sub-container .four_possibilities .possibilities{
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+}
+.container .sub-container .four_possibilities .possibilities h2{
+    font-size: 28px;
+}
+.container .sub-container .four_possibilities .possibilities p{
+    font-size: 12px;
+    font-weight: 100;
+    color: #141414;
+}
+
