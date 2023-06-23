@@ -17,8 +17,7 @@ body {
     font-weight: normal;
     font-style: normal;
     color: #141414;
-    width: 100%;
-    border: 2px solid red;
+    width: 100vw;
 }
 
 .container {
