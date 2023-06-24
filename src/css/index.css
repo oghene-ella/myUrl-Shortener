@@ -482,7 +482,7 @@ input[type=checkbox] {
 .container .sub-container .scissors-form {
     width: 100%;
     background-image: url("../img/other_assets/form-background.png");
-    height: 60vw;
+    height: 36vw;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -493,7 +493,7 @@ input[type=checkbox] {
     height: 40vh;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
@@ -551,6 +551,42 @@ input[type=checkbox] {
     color: #589bff;
     padding: 5px;
     font-family: "CustomGilroyFont";
+}
+
+/* faq stylingggg */
+.container .sub-container .faq-section{
+    width: 100%;
+    height: 150vh;
+    background-image: url("../img/other_assets/FAQs-bg.png");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+}
+.container .sub-container .faq-section .faq-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.container .sub-container .faq-section .faq-header span.header-2 {
+    width: fit-content;
+    display: flex;
+    margin: 40px auto;
+    gap: 1rem;
+}
+
+.container .sub-container .faq-section .faq-header span.header-2 h2 {
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+
+.container .sub-container .faq-section .faq-body{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    margin: auto;
 }
 
 /* Link Optimization */
