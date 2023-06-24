@@ -7,13 +7,20 @@
 
 @font-face {
     font-family: "CustomGilroyFont";
-    src: url("../fonts/Gilroy-Light.eot");
-    src: url("../fonts/Gilroy-Medium") format("woff"),
-        url("../fonts/Gilroy-Light") format("opentype");
+    src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CustomGilroyFont";
+    src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 body {
-    font-family: 'CustomGilroyFont', Arial, sans-serif;
+    font-family: 'CustomGilroyFont';
     font-weight: normal;
     font-style: normal;
     color: #141414;
@@ -584,28 +591,27 @@ input[type=checkbox] {
 /* the faq body section */
 .container .sub-container .faq-section .faq-body{
     width: 50%;
+    padding: 0px 0px 60px 0px;
     margin: auto;
 }
-.container .sub-container .faq-section ul {
+.container .sub-container .faq-section .faq-body ul {
     width: 100%;
     height: fit-content;
-    left: 20%;
 }
-
-.container .sub-container .faq-section .transition,
-.container .sub-container .faq-section ul li i:before,
-.container .sub-container .faq-section ul li i:after,
-.container .sub-container .faq-section p {
+.transition,
+.container .sub-container .faq-section .faq-body ul li i:before,
+.container .sub-container .faq-section .faq-body ul li i:after,
+.container .sub-container .faq-section .faq-body p {
     transition: all 0.25s ease-in-out;
 }
 
-.container .sub-container .faq-section .flipIn,
-.container .sub-container .faq-section ul li {
+.flipIn,
+.container .sub-container .faq-section .faq-body ul li {
     animation: flipdown 0.5s ease both;
 }
 
 @media (max-width: 550px) {
-    .container .sub-container .faq-section {
+    .container .sub-container .faq-section .faq-body{
         box-sizing: border-box;
         transform: translate(0, 0);
         max-width: 100%;
@@ -615,7 +621,7 @@ input[type=checkbox] {
     }
 }
 
-.container .sub-container .faq-section h2 {
+.container .sub-container .faq-section .faq-body h2 {
     width: 92%;
     font-size: 18px;
     line-height: 34px;
@@ -627,7 +633,7 @@ input[type=checkbox] {
     color: #141414;
 }
 
-.container .sub-container .faq-section p {
+.container .sub-container .faq-section .faq-body p {
     color: rgb(33, 34, 36);
     font-size: 16px;
     width: 95%;
@@ -642,14 +648,14 @@ input[type=checkbox] {
     z-index: 2;
 }
 
-.container .sub-container .faq-section ul {
+.container .sub-container .faq-section .faq-body ul {
     list-style: none;
     perspective: 900;
     padding: 0;
     margin: 0;
 }
 
-.container .sub-container .faq-section ul li {
+.container .sub-container .faq-section .faq-body ul li {
     position: relative;
     padding: 0;
     margin: 0;
@@ -658,31 +664,31 @@ input[type=checkbox] {
     border-bottom: 1px dotted #dce7eb;
 }
 
-.container .sub-container .faq-section ul li:nth-of-type(1) {
+.container .sub-container .faq-section .faq-body ul li:nth-of-type(1) {
     animation-delay: 0.5s;
 }
 
-.container .sub-container .faq-section ul li:nth-of-type(2) {
+.container .sub-container .faq-section .faq-body ul li:nth-of-type(2) {
     animation-delay: 0.75s;
 }
 
-.container .sub-container .faq-section ul li:nth-of-type(3) {
+.container .sub-container .faq-section .faq-body ul li:nth-of-type(3) {
     animation-delay: 1s;
 }
 
-.container .sub-container .faq-section ul li:last-of-type {
+.container .sub-container .faq-section .faq-body ul li:last-of-type {
     padding-bottom: 0;
 }
 
-.container .sub-container .faq-section ul li i {
+.container .sub-container .faq-section .faq-body ul li i {
     position: absolute;
     transform: translate(-6px, 0);
     margin-top: 16px;
     right: 0;
 }
 
-.container .sub-container .faq-section ul li i:before,
-.container .sub-container .faq-section ul li i:after {
+.container .sub-container .faq-section .faq-body ul li i:before,
+.container .sub-container .faq-section .faq-body ul li i:after {
     content: "";
     position: absolute;
     background-color: #141414;
@@ -690,15 +696,15 @@ input[type=checkbox] {
     height: 12px;
 }
 
-.container .sub-container .faq-section ul li i:before {
+.container .sub-container .faq-section .faq-body ul li i:before {
     transform: translate(-2px, 0) rotate(90deg);
 }
 
-.container .sub-container .faq-section ul li i:after {
+.container .sub-container .faq-section .faq-body ul li i:after {
     transform: translate(2px, 0) rotate(-90deg);
 }
 
-.container .sub-container .faq-section ul li input[type=checkbox] {
+.container .sub-container .faq-section .faq-body ul li input[type=checkbox] {
     position: absolute;
     cursor: pointer;
     width: 100%;
@@ -707,18 +713,18 @@ input[type=checkbox] {
     opacity: 0;
 }
 
-.container .sub-container .faq-section ul li input[type=checkbox]:checked~p {
+.container .sub-container .faq-section .faq-body ul li input[type=checkbox]:checked~p {
     margin-top: 0;
     max-height: 0;
     opacity: 0;
     transform: translate(0, 50%);
 }
 
-.container .sub-container .faq-section ul li input[type=checkbox]:checked~i:before {
+.container .sub-container .faq-section .faq-body ul li input[type=checkbox]:checked~i:before {
     transform: translate(-2px, 0) rotate(270deg);
 }
 
-.container .sub-container .faq-section ul li input[type=checkbox]:checked~i:after {
+.container .sub-container .faq-section .faq-body ul li input[type=checkbox]:checked~i:after {
     transform: translate(-2px, 0) rotate(-180deg);
 }
 
